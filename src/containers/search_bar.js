@@ -27,7 +27,7 @@ class SearchBar extends Component {
   render() {
     return (
       <form onSubmit={this.onFormSubmit} className="input-group">
-        <input 
+        <input
           placeholder="Get climate informations"
           className="form-control"
           value={this.state.term}
