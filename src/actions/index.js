@@ -7,7 +7,7 @@ export const FETCH_WEATHER = 'FETCH_WEATHER';
 
 export default function fetchWeather(city) {
   const url = `${ROOT_URL}&q=${city},us`;
-  const request = axios.get(url, { 'Access-Control-Allow-Origin': '*' });
+  const request = axios.get(url);
 
   return {
     type: FETCH_WEATHER,
