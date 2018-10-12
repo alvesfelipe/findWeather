@@ -1,12 +1,13 @@
 {
   "extends": "airbnb",
   "rules": {
+    "no-new": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/prefer-stateless-function": "off",
     "class-methods-use-this": [2, {
       "exceptMethods": [
         "render",
-        "renderWeather"
+        "renderWeather",
       ]
     }]
   }
