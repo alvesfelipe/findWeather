@@ -6,6 +6,7 @@ function average(data) {
   return _.round((_.sum(data) / data.length));
 }
 
+/* eslint-disable react/display-name */
 export default props => (
   <div>
     <Sparklines height={120} width={180} data={props.data}>
@@ -15,3 +16,4 @@ export default props => (
     <div>{average(props.data)} {props.units}</div>
   </div>
 );
+/* eslint-enable react/display-name */
